@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="lib/jquery-1.6.4.js"></script>
+        <script src="lib/jquery.mobile-1.1.0.js"></script>
+        <link href="src/css/jquery.mobile.structure-1.1.0.css" rel="stylesheet">
+        <link href="src/css/jquery.mobile.theme-1.1.0.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div data-role="page" id="moviles" data-title=" ">
+            <div data-role="header">
+                <h1>Cuestionario</h1>
+            </div>
+            <div data-role="content">
+                <div class="div-widget">
+                    <form action="http://192.168.0.100/prototipo/preguntas/respuestas.php" method="POST">
+                        <span>Pregunta 1</span>
+                        <fieldset data-role="controlgroup">
+                            <legend></legend>
+                            <input type="radio" id="radio1" value="A" name="pregunta1" checked="checked">
+                            <label for="radio1">A</label>
+                            <input type="radio" id="radio2" value="B" name="pregunta1">
+                            <label for="radio2">B</label>
+                            <input type="radio" id="radio3" value="C" name="pregunta1">
+                            <label for="radio3">C</label>
+                        </fieldset>
+                        <span>Pregunta 2</span>
+                        <fieldset data-role="controlgroup">
+                            <legend></legend>
+                            <input type="radio" id="radio4" value="A" name="pregunta2" checked="checked">
+                            <label for="radio4">A</label>
+                            <input type="radio" id="radio5" value="B" name="pregunta2">
+                            <label for="radio5">B</label>
+                            <input type="radio" id="radio6" value="C" name="pregunta2">
+                            <label for="radio6">C</label>
+                        </fieldset>
+                        <span>Pregunta 3</span>
+                        <fieldset data-role="controlgroup">
+                            <legend></legend>
+                            <input type="radio" id="radio7" value="A"  name="pregunta3" checked="checked">
+                            <label for="radio7">A</label>
+                            <input type="radio" id="radio8" value="B" name="pregunta3">
+                            <label for="radio8">B</label>
+                            <input type="radio" id="radio9" value="C" name="pregunta3">
+                            <label for="radio9">C</label>
+                        </fieldset>
+                       
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+            <div data-role="footer">
+                <h1>CBTis No. 252</h1>
+            </div>
+        </div>
+        <div data-role="page" id="page2">
+            <div data-role="header">
+                <h1>Header</h1>
+            </div>
+            <div data-role="content"></div>
+            <div data-role="footer">
+                <h1>Footer</h1>
+            </div>
+        </div>
+    </body>
+
+</html>
